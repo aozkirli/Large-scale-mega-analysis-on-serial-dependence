@@ -27,13 +27,15 @@ tau         = 1;    % temporal decay parameter, fixed
 nback       = 1;
 meas        = 0;
 theta       = datasample(0:179,10000)';
-
+opt_scat   = @(delta,sigma) sqrt(1./(2+(delta/sigma).^2).^2.*sigma.^2+(1-1./(2+(delta/sigma).^2)).^2.*sigma^2);
 for i = 1:max(tbl_scatter.codenum)
     tmp = tbl_scatter(tbl_scatter.codenum==i,:);
     simulationScat = mean(tmp.ES);
     model = SD_ma_model_bayesian(simulationScat,Sd,Pt,tau,theta,nback,meas);
+    optIntSig = opt_scat(model.delta,simulationScat);
     for k = 1:3
         bayes(i,k) = mean(model.sigma(ismember(abs(model.delta),45*(k-1))));
+        optInt(i,k) = mean(optIntSig(ismember(abs(model.delta),45*(k-1))));
     end
 end
 
@@ -108,7 +110,7 @@ for k = 1:3
     scatter(optfg.x,median(medcomp),abs(median(effs)*50),'markerfacecolor',optfg.color,'markeredgecolor',[.2 .2 .2],'LineWidth',1);
     % small effect size criterion as reference
     scatter(optfg.x,median(medcomp),.2*50,'markerfacecolor',[1 1 1],'markeredgecolor',[1 1 1]);
-    medcomp_all{k} = medcomp;
+    medcomp_all{k} = medcomp; 
 
     % aestetichs
     box on;
