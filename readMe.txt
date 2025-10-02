@@ -46,3 +46,42 @@ Folders:
 - code: MATLAB scripts to preprocess and analyse the datasets in the folder “data”. The MATLAB script “main.m” does all the job and creates the figures. The results, figures and tables are then saved in the “results“ folder.
 - results: where the outputs are saved (tables, csv files, figures etc.), it is automatically created in preprocess_create_master_table.m. 
 
+Columns of CSV files for standardized versions of original datasets:
+
+- delta: acute angle calculated as sdp_acute_ang(previous target feature - current target feature) 
+- theta: current target feature
+- response: adjustment response
+- error: adjustment error calculated as sdp_acute_ang(current adjustment response - current target feature)
+- rt: adjustment response time (set to 9 if not available in the original dataset)
+- obs: unique (within dataset) observer (participant) id
+- block: unique block id 
+- cond: unique condition id that influences error scatter (e.g., uncertainty of the target stimulus)
+- study: char array for study reference
+- experiment: experiment id within study
+- stimulus: char array for the target feature type (Orientation or Motion)
+- expnum: integer codes representing experiment variable
+
+Preprocessed table after running the code:
+
+In addition to the variables above, the preprocessing adds following columns to the master .csv file:
+
+- studynum: integer code for study number, ranging from 1 to 22
+- stimtype: integer code for stimulus variable, 1=Orientation 2=Motion
+- code: char array describing the dataset (e.g., 01 Abreo et al. (2023))
+- obsid: unique observer (participant) id across the master dataset, ranging from 1 to 733
+- bin: delta bin used for model-free analyses, 1 if 0<=|delta|<=10; 2 if 40<=|delta|<=50; 3 if 80<=|delta|<=90; NaN else
+- outliers_q: flag outlier trials for each grouping level (dataset/participant/condition) using isoutlier(X,'quartiles'), 1 if outlier, 0 otherwise (we recommend using this as it does not assume normality)
+- outliers_sd: flag outlier trials for each grouping level (dataset/participant/condition) using isoutlier(X,'mean'), 1 if outlier, 0 otherwise
+- outliers_rt: flag outlier trials based on adjustment response time, 1 if rt>10, 0 otherwise
+- error_iqr: identical to error variable if not outlier, NaN if outlier based on outliers_iqr and outliers_rt
+- error_sd: identical to error variable if not outlier, NaN if outlier based on outliers_sd and outliers_rt 
+- mfree_ss_bias: error_iqr if ismember(theta,[10:25 100:115]), -error_iqr if ismember(theta,[65:80 155:170]), NaN otherwise. Used to calculate the model free stimulus-specific bias
+- theta_cent: theta-90 if Orientation dataset, theta-180 if motion dataset
+- error_ori_deb: adjustment errors after removing stimulus-specific bias, calculated as erroriqr - predicted orientation bias pattern using sine and cosine functions
+- error_ori_deb_sd_deb: adjustment errors after removing stimulus-specific bias and serial dependence bias, calculated as error_ori_deb - predicted serial dependence bias pattern using sine and cosine functions
+- error_norm: zscored error variable (for each grouping level separately)
+- error_ori_deb_norm: zscored error_ori_deb variable (for each grouping level separately)
+- error_ori_deb_sd_deb_norm: zscored error_ori_deb_sd_deb variable (for each grouping level separately)
+- mfree_sd_bias_factor: 1 if ismember(delta,[1:45]), -1 if ismember(delta,[-45:-1]), 0 if delta==0, NaN otherwise. Used to calculate the model free serial dependence bias
+
+
