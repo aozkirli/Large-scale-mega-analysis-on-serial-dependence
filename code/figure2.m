@@ -81,11 +81,6 @@ for k = 1:2
 
     scatter(optfg.x, median(medvalues), 0.2 * 50, 'MarkerFaceColor', [1 1 1], 'MarkerEdgeColor', [1 1 1]);
 
-    % Aesthetics
-    box on;
-    view([90 -90]);
-    set(gca, 'FontSize', 14, 'LineWidth', 2, 'FontName', FontName, 'TickLength', [0 0]);
-
     if k == 1
         datname = strrep(datasets, '_', ' ');
         datname{n_datasets + 1} = '\bf Median';
@@ -102,6 +97,10 @@ for k = 1:2
     xlim([-20 x_spacing(end) + 85]);
     tl = title(titles{k});
     tl.FontSize = 22;
+    % Aesthetics
+    box on;
+    view([90 -90]);
+    set(gca, 'FontSize', 14, 'LineWidth', 2, 'FontName', FontName, 'TickLength', [.005 .005]);
 end
 
 set(gcf, 'PaperOrientation', 'landscape');

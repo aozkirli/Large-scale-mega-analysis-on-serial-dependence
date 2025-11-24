@@ -73,7 +73,7 @@ for k = 1:3
             % smaller than the effect size criterion of reference
             scatter(optfg.x,median(comparison),.2*50,'markerfacecolor',[1 1 1],'markeredgecolor',[1 1 1],'LineWidth',1);
         end
-        set(gca, 'FontSize', 14, 'LineWidth', 2, 'FontName', FontName,'TickLength', [0 0]); % Removes both major ticks
+        set(gca, 'FontSize', 14, 'LineWidth', 2, 'FontName', FontName,'TickLength', [0.005 0.005]); % Removes both major ticks
 
     end
     [~,pp,~,stats] = ttest(medcomp,0);
