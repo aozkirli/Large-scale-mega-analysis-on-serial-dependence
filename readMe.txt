@@ -1,6 +1,6 @@
 This repository contains the standardized datasets from 22 studies (standardized versions, please refer to the relevant studies for raw data) as well as preprocessing and analysis codes to reproduce the results and figures in the manuscript:
 
-“Large-scale mega-analysis reveals detrimental effects of serial dependence on perceptual decision-making”
+“Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making”
 
 by Ozkirli, Chetverikov and Pascucci (2025) in Nature Human Behavior.
 
@@ -9,7 +9,7 @@ by Ozkirli, Chetverikov and Pascucci (2025) in Nature Human Behavior.
 ##########################################################################################
 
 Future studies using this compiled dataset are obligated to cite the paper Ozkirli, Chetverikov & Pascucci (2025) published in Nature Human Behavior, as well as those original datasets that they are using. 
-References to the individual studies used in this study are provided below:
+References to the 22 individual studies used in this study are provided below:
 
 1) Abreo, S., Gergen, A., Gupta, N. & Samaha, J. Effects of satisfying and violating expectations on serial dependence. J. Vis. 23, 6–6 (2023).
 2) Blondé, P., Kristjánsson, Á. & Pascucci, D. Tuning perception and decisions to temporal context. iScience 108008 (2023) doi:10.1016/j.isci.2023.108008.
@@ -33,6 +33,8 @@ References to the individual studies used in this study are provided below:
 20) Pascucci, D. et al. Intact Serial Dependence in Schizophrenia: Evidence from an Orientation Adjustment Task. Schizophr. Bull. sbae106 (2024).
 21) Sadil, P., Cowell, R. A. & Huber, D. E. The push–pull of serial dependence effects: Attraction to the prior response and repulsion from the prior stimulus. Psychon. Bull. Rev. 1–15 (2024).
 22) Samaha, J., Switzky, M. & Postle, B. R. Confidence boosts serial dependence in orientation estimation. J. Vis. 19, 25–25 (2019).
+
+**** IMPORTANT: Studies 9, 10, and 12 are currently undergoing a new licensing agreement. As soon as we receive authorization, we will upload them here and make them publicly available. *** 
 
 #############################################################################################
 ############################### INFORMATION ABOUT REPOSITORY: ###############################
