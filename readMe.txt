@@ -2,7 +2,7 @@ This repository contains the standardized datasets from 22 studies (standardized
 
 “Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making”
 
-by Ozkirli, Chetverikov and Pascucci (2025) in Nature Human Behavior.
+by Ozkirli, Chetverikov and Pascucci (2025) in Nature Human Behavior, doi:10.1038/s41562-025-02362-8.
 
 ##########################################################################################
 ############################### IMPORTANT ABOUT LICENSING: ###############################
