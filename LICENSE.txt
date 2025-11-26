@@ -14,9 +14,10 @@ This repository contains the Serial Dependence Compiled Dataset, curated by Ozki
 2. Prohibited Use
 
 I shall not:
- (a) Use the dataset for commercial purposes, or redistribute the dataset (or substantial subsets) without including this license.
- (b) Attempt to re-identify any participant or link the data to personal information.
- (c) Use the dataset for clinical, diagnostic, or individual decision-making.
+ (a) Use the dataset for commercial purposes.
+ (b) Redistribute the dataset (or substantial subsets) without including this license
+ (c) Attempt to re-identify any participant or link the data to personal information.
+ (d) Use the dataset for clinical, diagnostic, or individual decision-making.
 
 
 3. Required Citations
@@ -53,9 +54,13 @@ In all publications, preprints, theses, posters, and presentations using this da
 
 4. Acknowledgment Requirements
 
- (a) In addition to the citation of the original studies whose datasets I am using, if my work uses data originating from Radboud University, I shall include:
-	“The standardized compilation of datasets used in this study was prepared by Ozkirli et al. (2025). Data from XX studies were provided by the Radboud University, Nijmegen, the Netherlands.”
-where XX is the number of Radboud University studies included in my analysis.
+In addition to citing all relevant prior work as described in Section 3, I include the following acknowledgment statements:
+ (a) Standardized Dataset Compilation
+	"The standardized compilation of datasets used in this study was prepared by Ozkirli et al. (2025)."
+ (b) Radboud University Data (if applicable):
+	If the analysis includes data originating from Radboud University, the following statement will be added:
+	“Data from XX studies were provided by Radboud University, Nijmegen, the Netherlands.”
+where XX represents the number of Radboud University studies included in the analysis.
 
 5. Redistribution
 
@@ -68,15 +73,16 @@ Redistribution of the dataset is allowed only if:
 
 6. Warranty Disclaimer
 
- (a) The dataset is provided “as is” without any warranty (express or implied), including but not limited to accuracy, completeness, or fitness for a particular purpose.
- (b) The authors and institutions accept no liability for direct, indirect, incidental, or consequential damages arising from dataset use.
+(a) The dataset is provided “as is”, without any warranty of any kind, whether express or implied, including but not limited to warranties of accuracy, completeness, reliability, or fitness for a particular purpose.
+(b) The authors and affiliated institutions shall not be held liable for any direct, indirect, incidental, or consequential damages arising from the use of the dataset.
 
 
 7. Termination
 
- (a) This license is automatically terminated if I violate its terms. Upon termination, I must cease using the dataset and delete all copies.
- (b) Already-published work may remain published if it complied with this license at the time of publication.
+(a) This license will terminate automatically upon any violation of its terms. Upon termination, all use of the dataset must cease, and all copies of the dataset in my possession must be deleted.
+(b) Any work already published prior to termination may remain published, provided that it complied with the terms of this license at the time of publication.
 
 
 8. Contact
-For questions regarding licensing or dataset usage, contact the dataset maintainers as listed in the repository.
+
+For questions regarding licensing, data permissions, or dataset usage, please contact the dataset maintainers as listed in the official repository.
