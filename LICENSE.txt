@@ -26,7 +26,7 @@ In all publications, preprints, theses, posters, and presentations using this da
  (a) The main compilation paper: 
 	Ozkirli, A., Chetverikov, A. & Pascucci, D. (2025). Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making. Nature Human Behaviour. https://doi.org/10.1038/s41562-025-02362-8
 
- (b) All original 22 studies whose data I use from the compiled dataset (or the subset at minimum):
+ (b) Each of the original 22 studies whose data I use from the compiled dataset:
 	Abreo, S., Gergen, A., Gupta, N. & Samaha, J. Effects of satisfying and violating expectations on serial dependence. J. Vis. 23, 6–6 (2023).
 	Blondé, P., Kristjánsson, Á. & Pascucci, D. Tuning perception and decisions to temporal context. iScience 108008 (2023) doi:10.1016/j.isci.2023.108008.
 	Ceylan, G. & Pascucci, D. Attractive and repulsive serial dependence: The role of task relevance, the passage of time, and the number of stimuli. J. Vis. 23, 8 (2023).
