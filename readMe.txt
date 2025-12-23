@@ -1,8 +1,6 @@
-This repository contains the standardized datasets from 22 studies (standardized versions, please refer to the relevant studies for raw data) as well as preprocessing and analysis codes to reproduce the results and figures in the manuscript:
+This repository contains the standardized datasets from 22 studies (standardized versions, please refer to the relevant studies for raw data) as well as preprocessing and analysis codes to reproduce the results and figures in the publication:
 
-“Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making”
-
-by Ozkirli, Chetverikov and Pascucci (2025) in Nature Human Behavior, doi:10.1038/s41562-025-02362-8.
+Ozkirli, A., Chetverikov, A. & Pascucci, D. Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making. Nat Hum Behav (2025). https://doi.org/10.1038/s41562-025-02362-8
 
 ##########################################################################################
 ############################### IMPORTANT ABOUT LICENSING: ###############################
