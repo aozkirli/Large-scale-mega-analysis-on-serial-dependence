@@ -1,5 +1,5 @@
 Serial Dependence Compiled Dataset — License Agreement
-Version 1.0 (2025)
+Version 1.1 (2025)
 
 This repository contains the Serial Dependence Compiled Dataset, curated by Ozkirli, Chetverikov & Pascucci (2025). By downloading, accessing, or using any part of this dataset, I agree to the terms below.
 
@@ -25,7 +25,7 @@ I shall not:
 In all publications, preprints, theses, posters, and presentations using this dataset, I shall cite:
 
  (a) The main compilation paper: 
-	Ozkirli, A., Chetverikov, A. & Pascucci, D. (2025). Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making. Nature Human Behaviour. https://doi.org/10.1038/s41562-025-02362-8
+	Ozkirli, A., Chetverikov, A. & Pascucci, D. Large-scale mega-analysis indicates that serial dependence deteriorates perceptual decision-making. Nat Hum Behav (2025). https://doi.org/10.1038/s41562-025-02362-8
 
  (b) Each of the original 22 studies whose data I use from the compiled dataset:
 	Abreo, S., Gergen, A., Gupta, N. & Samaha, J. Effects of satisfying and violating expectations on serial dependence. J. Vis. 23, 6–6 (2023).
